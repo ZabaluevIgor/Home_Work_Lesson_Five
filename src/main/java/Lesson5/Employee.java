@@ -22,7 +22,7 @@ class Employee {
         this.age = age;
         this.maritalStatus = maritalStatus;
     }
-    // Создаем метод возвращающий возраст(age)
+    // Метод возвращающий возраст
     public int findOutAge() {
         return age;
     }

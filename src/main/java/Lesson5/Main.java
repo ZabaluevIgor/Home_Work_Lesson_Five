@@ -26,13 +26,21 @@ public class Main {
                 "zabaluev-vlg@mail.ru", "+7(937)093-32-76",
                 50000, 35, "married");
 
+
+
         // Создаем условие для вывода сотрудников старше 30 лет
-        int i = 0;
-        while (i < peoplesBox.length) {
-            if (peoplesBox[i].findOutAge() > 30) {
-                peoplesBox[i].data();
+
+        // Так предложила подкорректировать IDEA,
+        for (Employee box : peoplesBox) {
+            if (box.findOutAge() > 30) {
+                box.data();
             }
-            i++;
         }
+        // Так я делал изначально
+//        for (int i = 0; i < peoplesBox.length; i++) {
+//            if (peoplesBox[i].findOutAge() > 30) {
+//                peoplesBox[i].data();
+//            }
+//        }
     }
 }
